@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img src="./marble1.jpg" style="position: relative; height: 80px; width: 80px; margin: 40vh 40vw; top: -10vh; left: -10vw;" onmouseover="{j=0}" onmouseout="{j=1; rotate();}" );" id="image">
+<script>
+let i=0;
+let j=1;
+let p=document.getElementById("image");
+rotate();
+function rotate()
+{
+	if(j==1){
+	i++;
+if(i===0)
+{
+	p.style.top = "-10vh";
+	p.style.left = "-10vw";
+
+}
+
+if(i===1)
+{
+	p.style.top = "-10vh";
+	p.style.left = "10vw";
+
+}
+
+
+if(i===2)
+{
+	p.style.top = "0vh";
+	p.style.left = "20vw";
+
+}
+
+if(i===3)
+{
+	p.style.top = "10vh";
+	p.style.left = "10vw";
+
+}
+
+if(i===4)
+{
+	p.style.top = "10vh";
+	p.style.left = "-10vw";
+
+}
+
+if(i===5)
+{
+	p.style.top = "0vh";
+	p.style.left = "-20vw";
+
+}
+if(i===6)
+{
+	i=0;
+	p.style.top = "-10vh";
+	p.style.left = "-10vw";
+}
+setTimeout("rotate()" , 1000)
+}
+}
+
+</script>
+</body>
+</html>
